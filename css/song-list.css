@@ -106,6 +106,9 @@
 .song-details-image{
 	height: 50%;
 }
+audio{
+	border: none;
+}
 /*--------------------mobie responsive --------------------*/
 @media screen and (max-width: 600px){
 	/*---------------album details---------------------*/
