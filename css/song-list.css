@@ -1,0 +1,150 @@
+/*-----------------------------band/album/group info-------------------*/
+#album-details{
+	display: flex;
+	width: 100%;
+	background-color:#1C1C5F;
+}
+#album-details img{
+	height: 300px;
+	width: 300px;
+}
+#album-group-details{
+	display: flex;
+	flex-direction: column;
+}
+#group-info{
+	margin-left: 25px;
+	padding-top:40px; 
+}
+#group-info-heading{
+	color: white;
+	font-family: sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 120px;
+}
+#followers{
+	color: lightgrey;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+#about-group{
+	color: grey;
+	word-break: break-all;
+	font-size: 12px;
+	font-family: sans-serif;
+	margin: 5px;
+}
+#bottom-of-group-info{
+	margin-left:25px;
+	margin-top: 30px;
+}
+#bottom-of-group-info button{
+	margin-right: 100px;
+	height: 35px;
+	width: 150px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right,blue,purple);
+}
+#follow-button{
+	color: grey;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+#follow-button+div{
+	color:white;
+	margin-top: 15px;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+/*----------------------------album song list------------------*/
+#album-song-list ol li{
+	width: 105%;
+	background-color: ;
+	margin-bottom: 10px;
+	background-color: #26293D;
+}
+#album-song-list ol li .fa-heart{
+	margin-left: 200px;
+}
+#album-song-list ol li .fa-heart::after{
+	content: "\002B";
+	margin-left: 20px;
+}
+.album-song-list-image-align{
+	margin-top: 5px;
+}
+/*------------------------aside section similar artist--------------*/
+.queue-header-right{
+	color:grey;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 6px;
+}
+.song-in-queue .fa-ellipsis-h{
+	margin-left: 50px;
+}
+.song-in-queue .fa-ellipsis-h + div{
+	color:grey;
+	font-size: 10px;
+	margin-left: 45px;
+}
+/*--------------------------------footer player----------------*/
+.song-duration-progress{
+	margin-top: -60px;
+}
+.play-details{
+	padding: 0px;
+	margin: 0px;
+}
+.play-buttons{
+	margin: -20px;
+	padding: 0px;
+}
+.song-details-image{
+	height: 50%;
+}
+/*--------------------mobie responsive --------------------*/
+@media screen and (max-width: 600px){
+	/*---------------album details---------------------*/
+	#album-details{
+		flex-direction: column;
+	}
+	#album-details img{
+		height: 150px;
+		width: 100%;
+	}
+	#group-info{
+		margin-left:5px;
+		padding-top:0px; 
+	}
+	#group-info-heading{
+		font-size: 28px;
+		margin-right:30px;
+	}
+	#follow-button+div{
+		margin: 15px;
+	}
+	/*----------------------------album song list------------------*/
+	#album-song-list ol li{
+		width: 110%;
+	}
+	#album-song-list ol li .fa-heart{
+		margin-left: 30px;
+	}
+	#album-song-list ol li .fa-heart::after{
+		margin-left: 10px;
+	}
+	.album-song-list-image-align{
+		margin-top: 5px;
+	}
+	/*--------------------------------footer player----------------*/
+	.song-duration-progress{
+		margin-top: -10px;
+	}
+	.play-details{
+		margin-top: 15px;
+	}
+}
